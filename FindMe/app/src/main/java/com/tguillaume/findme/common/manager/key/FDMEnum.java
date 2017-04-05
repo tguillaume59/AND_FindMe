@@ -11,7 +11,7 @@ package com.tguillaume.findme.common.manager.key;
 
 public class FDMEnum {
     public enum EnumNameFragment {
-        HOME_FRAGMENT,
+        ACCUEIL_FRAGMENT,
         CREATE_PROFIL,
         PLAY_VIEW
     }

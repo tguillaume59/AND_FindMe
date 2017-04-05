@@ -2,6 +2,7 @@ package com.tguillaume.findme.common.manager.implementation;
 
 import com.tguillaume.findme.common.mainClass.FDMMainFragment;
 import com.tguillaume.findme.common.manager.key.FDMEnum;
+import com.tguillaume.findme.modules.accueil.FDMAccueilFragment;
 import com.tguillaume.findme.modules.home.fragment.FDMHomeFragment;
 
 /**
@@ -35,8 +36,8 @@ public class FDMFragmentCreatorImpl {
             case CREATE_PROFIL:
 
                 break;
-            case HOME_FRAGMENT:
-
+            case ACCUEIL_FRAGMENT:
+                rFragment = new FDMAccueilFragment();
                 break;
             case PLAY_VIEW:
                 rFragment = new FDMHomeFragment();

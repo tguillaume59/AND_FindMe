@@ -57,7 +57,7 @@ public class FDMHomeFragment extends FDMMainFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         init();
-        View rView = inflater.inflate(R.layout.play_fragment, container, false);
+        View rView = inflater.inflate(R.layout.fragment_play, container, false);
 
         mPreview = (CameraSourcePreview) rView.findViewById(R.id.preview);
         mGraphicOverlay = (GraphicOverlay) rView.findViewById(R.id.faceOverlay);

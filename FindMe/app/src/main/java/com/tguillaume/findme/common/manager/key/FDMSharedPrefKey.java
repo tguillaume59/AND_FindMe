@@ -12,4 +12,5 @@ package com.tguillaume.findme.common.manager.key;
 public class FDMSharedPrefKey {
 
     public static String PREF_NAME = "FIND_ME_SHARED_PREFERENCE" ;
+    public static final String PROFIL_IS_CREATE = "PROFIL_IS_CREATE";
 }

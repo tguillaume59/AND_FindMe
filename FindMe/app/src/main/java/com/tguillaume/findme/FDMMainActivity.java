@@ -33,7 +33,7 @@ public class FDMMainActivity extends AppCompatActivity implements FDMFragmentLis
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
 
-        showFragment(FDMEnum.EnumNameFragment.PLAY_VIEW);
+        showFragment(FDMEnum.EnumNameFragment.ACCUEIL_FRAGMENT);
     }
 
     /**
