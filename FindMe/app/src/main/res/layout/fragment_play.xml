@@ -21,4 +21,25 @@
 
     </com.tguillaume.findme.common.ui.camera.CameraSourcePreview>
 
+    <ImageButton
+        android:id="@+id/fragment_play_get_clues_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_search_white_36dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/fragment_play_messages_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="13dp"
+        android:src="@drawable/ic_bulle"
+        android:background="@android:color/transparent"
+        android:adjustViewBounds="true"/>
+
 </RelativeLayout>
