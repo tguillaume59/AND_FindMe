@@ -246,7 +246,7 @@ public class FDMHomeFragment extends FDMMainFragment {
 
         GraphicFaceTracker(GraphicOverlay overlay) {
             mOverlay = overlay;
-            mFaceGraphic = new FaceGraphic(overlay);
+            mFaceGraphic = new FaceGraphic(mContext,overlay);
         }
 
         /**
