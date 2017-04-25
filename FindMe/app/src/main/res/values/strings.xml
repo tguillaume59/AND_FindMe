@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">FindMe</string>
-    <string name="find_guy">Rechercher</string>
+    <string name="find_guy">Vous cherchez</string>
 </resources>

@@ -21,6 +21,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -30,6 +32,8 @@ import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 import com.tguillaume.findme.FDMMainActivity;
+import com.tguillaume.findme.common.entity.FDMUser;
+import com.tguillaume.findme.views.FDMSearchingInfos;
 import com.tguillaume.findme.views.FaceGraphic;
 import com.tguillaume.findme.R;
 import com.tguillaume.findme.common.mainClass.FDMMainFragment;
@@ -42,14 +46,20 @@ import static com.tguillaume.findme.common.manager.key.FDMValues.RC_HANDLE_CAMER
 import static com.tguillaume.findme.common.manager.key.FDMValues.RC_HANDLE_GMS;
 
 
-public class FDMHomeFragment extends FDMMainFragment {
+public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickListener{
 
     private static final String TAG = FDMMainActivity.class.getSimpleName();
 
     private CameraSource mCameraSource = null;
     private FaceGraphic mFaceGraphic;
     private CameraSourcePreview mPreview;
+    private ImageButton mGetClueBtn;
+    private ImageButton mChatBtn;
+
     private GraphicOverlay mGraphicOverlay;
+    private FDMSearchingInfos mSearchLayout;
+    private FDMUser mCurrentUser;
+    private FDMUser mUserToFind;
 
 
     @Nullable
@@ -61,6 +71,12 @@ public class FDMHomeFragment extends FDMMainFragment {
 
         mPreview = (CameraSourcePreview) rView.findViewById(R.id.preview);
         mGraphicOverlay = (GraphicOverlay) rView.findViewById(R.id.faceOverlay);
+        mSearchLayout = (FDMSearchingInfos) rView.findViewById(R.id.fragment_play_searching_layout);
+        mGetClueBtn = (ImageButton)rView.findViewById(R.id.fragment_play_get_clues_btn);
+        mChatBtn = (ImageButton)rView.findViewById(R.id.fragment_play_messages_btn);
+
+        mGetClueBtn.setOnClickListener(this);
+        mChatBtn.setOnClickListener(this);
 
         // Check for the camera permission before accessing the camera.  If the
         // permission is not granted yet, request permission.
@@ -71,7 +87,36 @@ public class FDMHomeFragment extends FDMMainFragment {
             mFragmentListener.onRequestPermission();
         }
 
+        getNewUser();
+        mSearchLayout.setName(mUserToFind.getName());
         return rView;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.fragment_play_get_clues_btn:
+                getNewClue();
+                break;
+            case R.id.fragment_play_messages_btn:
+                break;
+        }
+    }
+
+    private void getNewUser(){
+        mUserToFind = new FDMUser("Dorian");
+        mUserToFind.addClue("Lunettes");
+        mUserToFind.addClue("Barbe");
+        mUserToFind.addClue("Yeux bleus");
+        mUserToFind.addClue("Peau blanche");
+        mUserToFind.addClue("Chatain");
+    }
+    private void getNewClue(){
+        Log.i(TAG,"getNewClue");
+        String tClue = mUserToFind.getNextClue();
+        if(!tClue.equals("")){
+            mSearchLayout.addClues(tClue);
+        }
     }
 
 

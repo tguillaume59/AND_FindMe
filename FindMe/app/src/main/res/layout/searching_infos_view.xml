@@ -2,24 +2,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@drawable/ic_banniere_background">
 
     <TextView
         android:id="@+id/searching_infos_textview"
         android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/searching_infos_imageview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:text="ceci est un test"
-        android:textSize="16sp"
-        android:textColor="@color/fdm_white"/>
+        android:textSize="20sp"
+        android:textColor="@color/fdm_blue"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/searching_infos_imageview"
         android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/searching_infos_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/circle"
         android:src="@drawable/ic_bulle"/>
@@ -28,9 +31,13 @@
         android:id="@+id/searching_infos_spinner"
         android:layout_toRightOf="@+id/searching_infos_imageview"
         android:layout_below="@+id/searching_infos_textview"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_spiner_background"
+        android:popupBackground="@android:color/transparent"
+        android:overlapAnchor="false"/>
 
 </RelativeLayout>

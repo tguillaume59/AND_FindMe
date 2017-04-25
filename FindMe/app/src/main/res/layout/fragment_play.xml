@@ -10,6 +10,7 @@
 
 
 
+
     <com.tguillaume.findme.common.ui.camera.CameraSourcePreview
         android:id="@+id/preview"
         android:layout_width="match_parent"
@@ -26,6 +27,9 @@
             android:layout_alignParentLeft="true"/>
 
     </com.tguillaume.findme.common.ui.camera.CameraSourcePreview>
+
+
+
 
     <ImageButton
         android:id="@+id/fragment_play_get_clues_btn"
@@ -47,6 +51,7 @@
         android:src="@drawable/ic_bulle"
         android:background="@android:color/transparent"
         android:adjustViewBounds="true"/>
+
 
     <com.tguillaume.findme.views.FDMSearchingInfos
         android:id="@+id/fragment_play_searching_layout"

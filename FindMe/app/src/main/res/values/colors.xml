@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="fdm_white">#FFFFFF</color>
+    <color name="fdm_black">#000000</color>
+    <color name="fdm_grey_transparent">#CCDDDDDD</color>
+    <color name="fdm_grey">#DDDDDD</color>
+    <color name="fdm_blue">#1560BD</color>
 </resources>

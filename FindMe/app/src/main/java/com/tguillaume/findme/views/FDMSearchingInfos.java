@@ -3,6 +3,7 @@ package com.tguillaume.findme.views;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.tguillaume.findme.R;
+import com.tguillaume.findme.views.adapter.FDMSpinerCluesAdapter;
 
 import java.util.ArrayList;
 
@@ -26,6 +28,8 @@ public class FDMSearchingInfos extends RelativeLayout {
     private TextView mSearchingTextview;
     private ImageView mAvatarImg;
     private Spinner mSpiner;
+    private FDMSpinerCluesAdapter mAdapter;
+    private ArrayList<String> mListClues;
 
     public FDMSearchingInfos(Context context) {
         super(context);
@@ -46,30 +50,24 @@ public class FDMSearchingInfos extends RelativeLayout {
     }
 
     private void init(){
+        Log.i(TAG,"init");
         View tLayout = LayoutInflater.from(mContext).inflate(R.layout.searching_infos_view,null);
         tLayout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
         mSearchingTextview = (TextView) tLayout.findViewById(R.id.searching_infos_textview);
         mAvatarImg = (ImageView) tLayout.findViewById(R.id.searching_infos_imageview);
         mSpiner = (Spinner) tLayout.findViewById(R.id.searching_infos_spinner);
 
+        createList();
         this.addView(tLayout);
     }
 
-
-    /*public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
-        View rView = inflater.inflate(R.layout.fragment_searching_infos, container, false);
-
-        // avec quelles valeurs initialiser le spinner ?
-        ArrayList<String> rDatasRoot = new ArrayList<String>();
-        rDatasRoot.add("");
-
-        Spinner rSpinner = (Spinner) rView.findViewById(R.id.searching_infos_spinner);
-        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(this.getContext(),R.layout.support_simple_spinner_dropdown_item, rDatasRoot);
-        rSpinner.setAdapter(spinnerArrayAdapter);
-
-        return rView;
-    }*/
+    public void createList(){
+        if(mListClues != null){
+            mListClues.clear();
+            mListClues = null;
+        }
+        mListClues = new ArrayList<>();
+    }
 
     public void setName(String name) {
         if(mSearchingTextview != null) {
@@ -84,14 +82,17 @@ public class FDMSearchingInfos extends RelativeLayout {
         }
     }
 
-    public void notifyDataChange(ArrayList<String> sList) {
-        if(mSpiner != null){
-
+    public void addClues(String sClue){
+        if(mListClues != null) {
+            mListClues.add(sClue);
+            notifyDataChange();
         }
-        /*ArrayAdapter<String> rSpinnerAdapter = (ArrayAdapter<String>) rSpinner.getAdapter();
+    }
+    public void notifyDataChange() {
+        mAdapter = null;
+        mAdapter = new FDMSpinerCluesAdapter(mContext,R.id.item_spiner_clue_textview,mListClues);
+        mSpiner.setAdapter(mAdapter);
 
-        rSpinnerAdapter.clear();
-        rSpinnerAdapter.addAll(sList);
-        rSpinnerAdapter.notifyDataSetChanged();*/
+
     }
 }
