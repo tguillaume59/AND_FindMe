@@ -1,14 +1,13 @@
 package com.tguillaume.findme.views;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -20,11 +19,44 @@ import java.util.ArrayList;
  * Created by Avast on 24/04/2017.
  */
 
-public class FDMSearchingInfos extends Fragment {
+public class FDMSearchingInfos extends RelativeLayout {
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    private final static String TAG = FDMSearchingInfos.class.getSimpleName();
+    private Context mContext;
+    private TextView mSearchingTextview;
+    private ImageView mAvatarImg;
+    private Spinner mSpiner;
+
+    public FDMSearchingInfos(Context context) {
+        super(context);
+        mContext = context;
+        init();
+    }
+
+    public FDMSearchingInfos(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        mContext = context;
+        init();
+    }
+
+    public FDMSearchingInfos(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        mContext = context;
+        init();
+    }
+
+    private void init(){
+        View tLayout = LayoutInflater.from(mContext).inflate(R.layout.searching_infos_view,null);
+        tLayout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+        mSearchingTextview = (TextView) tLayout.findViewById(R.id.searching_infos_textview);
+        mAvatarImg = (ImageView) tLayout.findViewById(R.id.searching_infos_imageview);
+        mSpiner = (Spinner) tLayout.findViewById(R.id.searching_infos_spinner);
+
+        this.addView(tLayout);
+    }
+
+
+    /*public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View rView = inflater.inflate(R.layout.fragment_searching_infos, container, false);
 
@@ -37,28 +69,29 @@ public class FDMSearchingInfos extends Fragment {
         rSpinner.setAdapter(spinnerArrayAdapter);
 
         return rView;
-    }
+    }*/
 
     public void setName(String name) {
-        View rView = getView();
-        TextView rText = (TextView) rView.findViewById(R.id.searching_infos_textview);
-        String rFind = R.string.find_guy + " " + name;
-        rText.setText(rFind);
+        if(mSearchingTextview != null) {
+            String tFind = mContext.getString(R.string.find_guy) + " " + name;
+            mSearchingTextview.setText(tFind);
+        }
     }
 
     public void setAvatarPicture(Drawable sAvatar) {
-        View rView = getView();
-        ImageView rImage = (ImageView) rView.findViewById(R.id.searching_infos_imageview);
-        rImage.setImageDrawable(sAvatar);
+        if(mAvatarImg != null) {
+            mAvatarImg.setImageDrawable(sAvatar);
+        }
     }
 
     public void notifyDataChange(ArrayList<String> sList) {
-        View rView = getView();
-        Spinner rSpinner = (Spinner) rView.findViewById(R.id.searching_infos_spinner);
-        ArrayAdapter<String> rSpinnerAdapter = (ArrayAdapter<String>) rSpinner.getAdapter();
+        if(mSpiner != null){
+
+        }
+        /*ArrayAdapter<String> rSpinnerAdapter = (ArrayAdapter<String>) rSpinner.getAdapter();
 
         rSpinnerAdapter.clear();
         rSpinnerAdapter.addAll(sList);
-        rSpinnerAdapter.notifyDataSetChanged();
+        rSpinnerAdapter.notifyDataSetChanged();*/
     }
 }

@@ -104,7 +104,7 @@ public class FDMHomeFragment extends FDMMainFragment {
         }
 
         mCameraSource = new CameraSource.Builder(mContext, detector)
-                .setRequestedPreviewSize(640, 480)
+                .setRequestedPreviewSize(1600, 1024)
                 .setFacing(CameraSource.CAMERA_FACING_BACK)
                 .setRequestedFps(30.0f)
                 .build();

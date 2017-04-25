@@ -4,8 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tguillaume.findme.FDMMainActivity"
-    android:background="@color/colorAccent">
+    tools:context="com.tguillaume.findme.FDMMainActivity">
 
 
 
