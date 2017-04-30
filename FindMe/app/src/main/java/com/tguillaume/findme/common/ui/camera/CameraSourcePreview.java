@@ -17,8 +17,12 @@ package com.tguillaume.findme.common.ui.camera;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.Point;
+import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Display;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup;
@@ -130,6 +134,7 @@ public class CameraSourcePreview extends RelativeLayout {
         int height = 240;
         if (mCameraSource != null) {
             Size size = mCameraSource.getPreviewSize();
+
             if (size != null) {
                 width = size.getWidth();
                 height = size.getHeight();
@@ -141,20 +146,34 @@ public class CameraSourcePreview extends RelativeLayout {
             int tmp = width;
             width = height;
             height = tmp;
+
+
+
+            AppCompatActivity tActivity = (AppCompatActivity)mContext;
+            Display display = tActivity.getWindowManager().getDefaultDisplay();
+            DisplayMetrics outMetrics = new DisplayMetrics ();
+            display.getMetrics(outMetrics);
+
+            float density  = mContext.getResources().getDisplayMetrics().density;
+            float tHeightPoint = outMetrics.heightPixels ;// / density;
+            float tWidthPoint  = outMetrics.widthPixels ;// / density;
+
+            width = Math.round(tWidthPoint );
+            height = Math.round(tHeightPoint);
         }
 
         final int layoutWidth = right - left;
         final int layoutHeight = bottom - top;
 
         // Computes height and width for potentially doing fit width.
-        int childWidth = layoutWidth;
-        int childHeight = (int)(((float) layoutWidth / (float) width) * height);
+        int childWidth = width;//layoutWidth;
+        int childHeight = height;//(int)(((float) layoutWidth / (float) width) * height);
 
         // If height is too tall using fit width, does fit height instead.
-        if (childHeight > layoutHeight) {
+        /*if (childHeight > layoutHeight) {
             childHeight = layoutHeight;
             childWidth = (int)(((float) layoutHeight / (float) height) * width);
-        }
+        }*/
 
         for (int i = 0; i < getChildCount(); ++i) {
             getChildAt(i).layout(0, 0, childWidth, childHeight);
@@ -165,6 +184,8 @@ public class CameraSourcePreview extends RelativeLayout {
         } catch (IOException e) {
             Log.e(TAG, "Could not start camera source.", e);
         }
+
+
     }
 
     private boolean isPortraitMode() {
