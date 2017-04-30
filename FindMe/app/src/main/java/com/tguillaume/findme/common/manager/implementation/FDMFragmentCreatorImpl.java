@@ -3,6 +3,7 @@ package com.tguillaume.findme.common.manager.implementation;
 import com.tguillaume.findme.common.mainClass.FDMMainFragment;
 import com.tguillaume.findme.common.manager.key.FDMEnum;
 import com.tguillaume.findme.modules.account.FDMCreateAccountFragment;
+import com.tguillaume.findme.modules.account.FDMCreateAvatarFragment;
 import com.tguillaume.findme.modules.accueil.FDMAccueilFragment;
 import com.tguillaume.findme.modules.home.fragment.FDMHomeFragment;
 
@@ -39,7 +40,7 @@ public class FDMFragmentCreatorImpl {
                 break;
 
             case CREATE_AVATAR:
-
+                rFragment = new FDMCreateAvatarFragment();
                 break;
 
             case ACCUEIL_FRAGMENT:

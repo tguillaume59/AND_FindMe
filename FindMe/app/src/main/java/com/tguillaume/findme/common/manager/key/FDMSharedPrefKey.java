@@ -16,4 +16,6 @@ public class FDMSharedPrefKey {
     public static final String SCAN_IS_ACTIVE = "SCAN_IS_ACTIVE";
     public static final String IS_WOMAN = "IS_WOMAN";
     public static final String PSEUDO = "PSEUDO";
+    public static final String AVATAR_ID = "AVATAR_ID";
+    public static final String AVATAR_INDEX_CONSTANTE = "AVATAR_INDEX_CONSTANTE";
 }

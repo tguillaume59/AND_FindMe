@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_accueil">
+
+    <TextView
+        android:id="@+id/fragment_create_avatar_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/fdm_white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/fragment_create_avatar_title_textview"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_create_avatar_viewpager"
+        android:layout_below="@+id/fragment_create_avatar_title_textview"
+        android:layout_above="@+id/fragment_create_avatar_create_account_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:id="@+id/fragment_create_avatar_go_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_expand_less_black_36dp"
+        android:rotation="270"/>
+
+    <ImageButton
+        android:id="@+id/fragment_create_avatar_go_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_expand_less_black_36dp"
+        android:rotation="90"/>
+
+
+    <Button
+        android:id="@+id/fragment_create_avatar_create_account_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/shape_btn_validate"
+        android:text="@string/validate"
+        android:textColor="@color/fdm_white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

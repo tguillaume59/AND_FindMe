@@ -11,6 +11,9 @@
     <string name="fragment_create_account_title_textview">Création de votre profil</string>
     <string name="fragment_create_account_name_edittext">Pseudo</string>
 
+    <!-- create avatar fragment -->
+    <string name="fragment_create_avatar_title_textview">Choisissez votre avatar</string>
+
     <!-- layout searching-->
     <string name="find_guy">Vous cherchez</string>
 
