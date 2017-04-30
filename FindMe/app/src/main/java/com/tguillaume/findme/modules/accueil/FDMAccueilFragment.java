@@ -45,8 +45,7 @@ public class FDMAccueilFragment extends FDMMainFragment implements View.OnClickL
         switch (view.getId()){
             case R.id.fragment_accueil_play_btn :
                 if(!mSharedPrefManager.getBoolean(FDMSharedPrefKey.PROFIL_IS_CREATE)){
-                    //todo afficher le fragment de creation du profil
-                    mFragmentListener.showFragment(FDMEnum.EnumNameFragment.PLAY_VIEW);
+                    mFragmentListener.showFragment(FDMEnum.EnumNameFragment.CREATE_PROFIL);
                 }else {
                     //profil créé , on affiche le fragment pour jouer
                     mFragmentListener.showFragment(FDMEnum.EnumNameFragment.PLAY_VIEW);

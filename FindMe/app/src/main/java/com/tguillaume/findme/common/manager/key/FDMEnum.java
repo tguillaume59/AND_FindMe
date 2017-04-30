@@ -13,6 +13,8 @@ public class FDMEnum {
     public enum EnumNameFragment {
         ACCUEIL_FRAGMENT,
         CREATE_PROFIL,
-        PLAY_VIEW
+        PLAY_VIEW,
+        CREATE_AVATAR,
+        MESSAGE
     }
 }

@@ -125,6 +125,7 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
             mFragmentListener.onRequestPermission();
         }
 
+        mSharedPrefManager.putBoolean(FDMSharedPrefKey.SCAN_IS_ACTIVE,true);
         getNewUser();
         mSearchLayout.setName(mUserToFind.getName());
         mClueIsDispo = true;

@@ -14,4 +14,6 @@ public class FDMSharedPrefKey {
     public static String PREF_NAME = "FIND_ME_SHARED_PREFERENCE" ;
     public static final String PROFIL_IS_CREATE = "PROFIL_IS_CREATE";
     public static final String SCAN_IS_ACTIVE = "SCAN_IS_ACTIVE";
+    public static final String IS_WOMAN = "IS_WOMAN";
+    public static final String PSEUDO = "PSEUDO";
 }

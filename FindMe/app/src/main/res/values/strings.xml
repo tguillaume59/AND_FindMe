@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">FindMe</string>
 
+    <!-- valeurs par defaut -->
+    <string name="man">Homme</string>
+    <string name="woman">Femme</string>
+    <string name="validate">Valider</string>
+    <string name="next_step">Suivant</string>
+
+    <!-- create account fragment -->
+    <string name="fragment_create_account_title_textview">Création de votre profil</string>
+    <string name="fragment_create_account_name_edittext">Pseudo</string>
+
     <!-- layout searching-->
     <string name="find_guy">Vous cherchez</string>
 

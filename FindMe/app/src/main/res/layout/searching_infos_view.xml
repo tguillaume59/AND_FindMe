@@ -25,7 +25,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/circle"
-        android:src="@drawable/ic_bulle"/>
+        android:src="@drawable/ic_tete_inconnu"/>
 
     <Spinner
         android:id="@+id/searching_infos_spinner"
