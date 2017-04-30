@@ -9,4 +9,5 @@
     <color name="fdm_grey_transparent">#CCDDDDDD</color>
     <color name="fdm_grey">#DDDDDD</color>
     <color name="fdm_blue">#1560BD</color>
+    <color name="fdm_red">#FF0000</color>
 </resources>

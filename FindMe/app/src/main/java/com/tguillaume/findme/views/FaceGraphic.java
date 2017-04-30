@@ -26,6 +26,8 @@ import android.widget.RelativeLayout;
 
 import com.google.android.gms.vision.face.Face;
 import com.tguillaume.findme.R;
+import com.tguillaume.findme.common.manager.implementation.FDMSharedPrefManager;
+import com.tguillaume.findme.common.manager.key.FDMSharedPrefKey;
 import com.tguillaume.findme.common.ui.camera.GraphicOverlay;
 
 /**
@@ -115,16 +117,19 @@ public class FaceGraphic extends GraphicOverlay.Graphic {
         float right = x + xOffset;
         float bottom = y + yOffset;
 
-        Drawable tPrisme = mContext.getResources().getDrawable(R.drawable.ic_prisme);
 
-        int yBottom = Math.round(top);
-        int yTop = Math.round(yBottom - (bottom - top));
-        int xLeft = Math.round(left + ((right - left)/4));
-        int xRight = Math.round(right - ((right - left)/4));
+        if((new FDMSharedPrefManager(mContext)).getBoolean(FDMSharedPrefKey.SCAN_IS_ACTIVE)) {
+            Drawable tPrisme = mContext.getResources().getDrawable(R.drawable.ic_prisme);
 
-        tPrisme.setBounds(xLeft,yTop,xRight,yBottom);
+            int yBottom = Math.round(top);
+            int yTop = Math.round(yBottom - (bottom - top));
+            int xLeft = Math.round(left + ((right - left) / 4));
+            int xRight = Math.round(right - ((right - left) / 4));
 
-        tPrisme.draw(canvas);
+            tPrisme.setBounds(xLeft, yTop, xRight, yBottom);
+
+            tPrisme.draw(canvas);
+        }
 
     }
 }

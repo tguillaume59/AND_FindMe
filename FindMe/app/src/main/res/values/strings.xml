@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">FindMe</string>
+
+    <!-- layout searching-->
     <string name="find_guy">Vous cherchez</string>
+
+    <!-- Play Fragment -->
+    <string name="fragment_play_find_btn">Trouver ! </string>
+
+
 </resources>

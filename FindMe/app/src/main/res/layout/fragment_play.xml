@@ -52,12 +52,60 @@
         android:background="@android:color/transparent"
         android:adjustViewBounds="true"/>
 
+    <ImageView
+        android:id="@+id/fragment_play_scan_active_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shape_circle_scan"
+        android:background="@android:color/transparent"/>
+
 
     <com.tguillaume.findme.views.FDMSearchingInfos
         android:id="@+id/fragment_play_searching_layout"
+        android:layout_above="@+id/fragment_play_find_btn"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/fragment_play_find_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/fragment_play_find_btn"
+        android:background="@drawable/shape_btn_find"
+        android:textColor="@color/fdm_white"
+        android:textSize="18sp"/>
+
+    <!-- btn pour activer desactiver le scan -->
+    <Button
+        android:id="@+id/fragment_play_activate_scan_btn"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/fragment_play_unable_scan_btn"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:background="@android:color/transparent"/>
+
 
 
 </RelativeLayout>

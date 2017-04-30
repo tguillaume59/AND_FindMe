@@ -13,6 +13,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
@@ -21,8 +22,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -33,6 +36,7 @@ import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 import com.tguillaume.findme.FDMMainActivity;
 import com.tguillaume.findme.common.entity.FDMUser;
+import com.tguillaume.findme.common.manager.key.FDMSharedPrefKey;
 import com.tguillaume.findme.views.FDMSearchingInfos;
 import com.tguillaume.findme.views.FaceGraphic;
 import com.tguillaume.findme.R;
@@ -55,11 +59,38 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
     private CameraSourcePreview mPreview;
     private ImageButton mGetClueBtn;
     private ImageButton mChatBtn;
+    private Button mFindItBtn;
+    private Button mActivateScanBtn;
+    private Button mUnableScanBtn;
+    private ImageView mScanActiveImageView;
 
     private GraphicOverlay mGraphicOverlay;
     private FDMSearchingInfos mSearchLayout;
     private FDMUser mCurrentUser;
     private FDMUser mUserToFind;
+
+    private boolean mClueIsDispo = true;
+    private final int TIME_TO_WAIT = 10;
+    private int mTimer = 0;
+    Handler timerHandler = new Handler();
+    Runnable timerRunnable = new Runnable() {
+
+        @Override
+        public void run() {
+            mTimer++;
+
+            if(mTimer < TIME_TO_WAIT) {
+                mClueIsDispo = false;
+                timerHandler.postDelayed(this, 1000);
+                mGetClueBtn.setColorFilter(mContext.getResources().getColor(R.color.fdm_white));
+            }else {
+                mClueIsDispo = true;
+                timerHandler.removeCallbacks(timerRunnable);
+                mGetClueBtn.setColorFilter(mContext.getResources().getColor(R.color.fdm_red));
+            }
+        }
+    };
+
 
 
     @Nullable
@@ -74,9 +105,16 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
         mSearchLayout = (FDMSearchingInfos) rView.findViewById(R.id.fragment_play_searching_layout);
         mGetClueBtn = (ImageButton)rView.findViewById(R.id.fragment_play_get_clues_btn);
         mChatBtn = (ImageButton)rView.findViewById(R.id.fragment_play_messages_btn);
+        mFindItBtn = (Button)rView.findViewById(R.id.fragment_play_find_btn);
+        mActivateScanBtn = (Button)rView.findViewById(R.id.fragment_play_activate_scan_btn);
+        mUnableScanBtn = (Button)rView.findViewById(R.id.fragment_play_unable_scan_btn);
+        mScanActiveImageView = (ImageView)rView.findViewById(R.id.fragment_play_scan_active_imageview);
 
         mGetClueBtn.setOnClickListener(this);
         mChatBtn.setOnClickListener(this);
+        mFindItBtn.setOnClickListener(this);
+        mActivateScanBtn.setOnClickListener(this);
+        mUnableScanBtn.setOnClickListener(this);
 
         // Check for the camera permission before accessing the camera.  If the
         // permission is not granted yet, request permission.
@@ -89,6 +127,9 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
 
         getNewUser();
         mSearchLayout.setName(mUserToFind.getName());
+        mClueIsDispo = true;
+        getNewClue();
+
         return rView;
     }
 
@@ -99,6 +140,18 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
                 getNewClue();
                 break;
             case R.id.fragment_play_messages_btn:
+                break;
+
+            case R.id.fragment_play_find_btn:
+                //verifier si le joueur est le bon
+                break;
+            case R.id.fragment_play_activate_scan_btn:
+                mSharedPrefManager.putBoolean(FDMSharedPrefKey.SCAN_IS_ACTIVE,true);
+                mScanActiveImageView.setVisibility(View.VISIBLE);
+                break;
+            case R.id.fragment_play_unable_scan_btn:
+                mSharedPrefManager.putBoolean(FDMSharedPrefKey.SCAN_IS_ACTIVE,false);
+                mScanActiveImageView.setVisibility(View.GONE);
                 break;
         }
     }
@@ -113,10 +166,17 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
     }
     private void getNewClue(){
         Log.i(TAG,"getNewClue");
-        String tClue = mUserToFind.getNextClue();
-        if(!tClue.equals("")){
-            mSearchLayout.addClues(tClue);
+        if(mClueIsDispo){
+            timerHandler.postDelayed(timerRunnable, 0);
+            mTimer = 0;
+            String tClue = mUserToFind.getNextClue();
+            if(!tClue.equals("")){
+                mSearchLayout.addClues(tClue);
+            }
+        }else {
+            Toast.makeText(mContext, "Nouvel indice dispo dans " + (TIME_TO_WAIT - mTimer) + "secondes", Toast.LENGTH_SHORT).show();
         }
+
     }
 
 
