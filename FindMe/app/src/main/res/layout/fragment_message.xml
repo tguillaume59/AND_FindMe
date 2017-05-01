@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/shape_spiner_background"
             android:textColor="@color/fdm_black"
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_margin="5dp"/>
 
         <ImageButton

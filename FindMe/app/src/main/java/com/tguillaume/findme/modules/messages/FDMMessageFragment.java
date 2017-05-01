@@ -13,7 +13,9 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -35,8 +37,9 @@ public class FDMMessageFragment extends FDMMainFragment implements View.OnClickL
     private TextView mNameTextview;
     private EditText mMessageEditText;
     private ListView mMessagesListview;
-    private ArrayList<FDMMessage> mListMessages;
+    private static ArrayList<FDMMessage> mListMessages;
     private FDMMessageAdapter mAdapter;
+    private ImageButton mSendBtn;
 
     @Nullable
     @Override
@@ -47,6 +50,9 @@ public class FDMMessageFragment extends FDMMainFragment implements View.OnClickL
         mNameTextview = (TextView)rView.findViewById(R.id.fragment_toolbar_title_textview);
         mMessagesListview = (ListView)rView.findViewById(R.id.fragment_messages_listview);
         mMessageEditText = (EditText)rView.findViewById(R.id.fragment_messages_message_edittext);
+        mSendBtn = (ImageButton) rView.findViewById(R.id.fragment_message_send_message_btn);
+
+        mSendBtn.setOnClickListener(this);
 
         Bundle tBundle = this.getArguments();
         if(tBundle != null){
@@ -54,35 +60,36 @@ public class FDMMessageFragment extends FDMMainFragment implements View.OnClickL
             mNameTextview.setText(tName);
             mListMessages = new ArrayList<>();
 
-            if(tName.equals("Dorian")){
+            if(mListMessages.size() == 0) {
+                if (tName.equals("Dorian")) {
 
-            }else if (tName.equals("Sebastien")){
-                mListMessages.add(new FDMMessage("Sebastien","Re :)"));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Re, comment vas tu ?"));
-                mListMessages.add(new FDMMessage("Sebastien","Toujours aussi bien et toi ?"));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Ca va bien"));
-                mListMessages.add(new FDMMessage("Sebastien","Je viens d'arriver à Bordeaux et toi ?"));
-            }else if(tName.equals("Laure")){
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Salut, ca va ? "));
-                mListMessages.add(new FDMMessage("Laure","Hey ! Super et toi quoi de beau ? Tu es arrivé chez toi ?"));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Oui ca va.\nNon pas encore ... encore des retard"));
-                mListMessages.add(new FDMMessage("Laure","Ah oui je vois ... Toujours aussi efficace ... "));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Enfin on fait avec, allez bonne soirée "));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"A la prochaine"));
-                mListMessages.add(new FDMMessage("Laure","Merci, toi aussi bonne soirée"));
-                mListMessages.add(new FDMMessage("Laure","Bisous :) "));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Bisous"));
-                mListMessages.add(new FDMMessage("Laure",":)"));
+                } else if (tName.equals("Sebastien")) {
+                    mListMessages.add(new FDMMessage("Sebastien", "Re :)"));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Re, comment vas tu ?"));
+                    mListMessages.add(new FDMMessage("Sebastien", "Toujours aussi bien et toi ?"));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Ca va bien"));
+                    mListMessages.add(new FDMMessage("Sebastien", "Je viens d'arriver à Bordeaux et toi ?"));
+                } else if (tName.equals("Laure")) {
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Salut, ca va ? "));
+                    mListMessages.add(new FDMMessage("Laure", "Hey ! Super et toi quoi de beau ? Tu es arrivé chez toi ?"));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Oui ca va.\nNon pas encore ... encore des retard"));
+                    mListMessages.add(new FDMMessage("Laure", "Ah oui je vois ... Toujours aussi efficace ... "));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Enfin on fait avec, allez bonne soirée "));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "A la prochaine"));
+                    mListMessages.add(new FDMMessage("Laure", "Merci, toi aussi bonne soirée"));
+                    mListMessages.add(new FDMMessage("Laure", "Bisous :) "));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Bisous"));
+                    mListMessages.add(new FDMMessage("Laure", ":)"));
 
-            }else if(tName.equals("Mathilde")){
-                mListMessages.add(new FDMMessage("Mathilde","Hey ! Tu connais un peu le RER ?"));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Salut, oui un peu Pourquoi ?"));
-                mListMessages.add(new FDMMessage("Mathilde","Je suis Paris la semaine prochaine et je suis un peu perdue :/"));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"telecharge l'appli RATP elle est complète ;)"));
-                mListMessages.add(new FDMMessage("Mathilde","Cool merci du conseil"));
-                mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),"Ca serait sympa de se revoir un de ces quatres"));
+                } else if (tName.equals("Mathilde")) {
+                    mListMessages.add(new FDMMessage("Mathilde", "Hey ! Tu connais un peu le RER ?"));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Salut, oui un peu Pourquoi ?"));
+                    mListMessages.add(new FDMMessage("Mathilde", "Je suis Paris la semaine prochaine et je suis un peu perdue :/"));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "telecharge l'appli RATP elle est complète ;)"));
+                    mListMessages.add(new FDMMessage("Mathilde", "Cool merci du conseil"));
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO), "Ca serait sympa de se revoir un de ces quatres"));
+                }
             }
-
 
             mAdapter = new FDMMessageAdapter(mContext,R.layout.item_message, mListMessages);
             mMessagesListview.setAdapter(mAdapter);
@@ -94,7 +101,20 @@ public class FDMMessageFragment extends FDMMainFragment implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.fragment_message_send_message_btn:
+                String tMessage = mMessageEditText.getText().toString();
+                if(!tMessage.equals("")){
+                    mListMessages.add(new FDMMessage(mSharedPrefManager.getString(FDMSharedPrefKey.PSEUDO),tMessage));
+                    mAdapter.notifyDataSetChanged();
+                    mMessageEditText.setText("");
 
+                    mMessagesListview.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            // Select the last row so it will scroll into view...
+                            mMessagesListview.setSelection(mMessagesListview.getCount() - 1);
+                        }
+                    });
+                }
                 break;
         }
     }
