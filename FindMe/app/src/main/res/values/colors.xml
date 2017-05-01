@@ -10,4 +10,7 @@
     <color name="fdm_grey">#DDDDDD</color>
     <color name="fdm_blue">#1560BD</color>
     <color name="fdm_red">#FF0000</color>
+
+    <color name="fdm_green">#27B642</color>
+    <color name="fdm_red_pink">#f4235e</color>
 </resources>

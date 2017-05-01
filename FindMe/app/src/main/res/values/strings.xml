@@ -20,5 +20,10 @@
     <!-- Play Fragment -->
     <string name="fragment_play_find_btn">Trouver ! </string>
 
+    <!-- popup find-->
+    <string name="popup_not_find_title">Oups !! Vous vous êtes trompés de personne.</string>
+    <string name="popup_find_title">Félicitation !!\n Vous pouvez maintenant chatter tous les 2.</string>
+    <string name="popup_find_chat_btn">Commencer à discuter!</string>
+
 
 </resources>

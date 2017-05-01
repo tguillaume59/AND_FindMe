@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -37,6 +38,8 @@ import com.google.android.gms.vision.face.FaceDetector;
 import com.tguillaume.findme.FDMMainActivity;
 import com.tguillaume.findme.common.entity.FDMUser;
 import com.tguillaume.findme.common.manager.key.FDMSharedPrefKey;
+import com.tguillaume.findme.modules.home.popup.FDMPopupFindIt;
+import com.tguillaume.findme.modules.home.popup.FDMPopupNoFindIt;
 import com.tguillaume.findme.views.FDMSearchingInfos;
 import com.tguillaume.findme.views.FaceGraphic;
 import com.tguillaume.findme.R;
@@ -68,6 +71,7 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
     private FDMSearchingInfos mSearchLayout;
     private FDMUser mCurrentUser;
     private FDMUser mUserToFind;
+    private boolean mIsGoodPlayer = false;
 
     private boolean mClueIsDispo = true;
     private final int TIME_TO_WAIT = 10;
@@ -90,7 +94,6 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
             }
         }
     };
-
 
 
     @Nullable
@@ -145,7 +148,35 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
 
             case R.id.fragment_play_find_btn:
                 //verifier si le joueur est le bon
+                if(mIsGoodPlayer){
+                    mIsGoodPlayer = false;
+                    FDMPopupFindIt tPopup = new FDMPopupFindIt();
+                    tPopup.setFragmentListener(mFragmentListener);
+                    //recuperation du fragment manager pour voir la popup
+                    try{
+                        AppCompatActivity tActivity = (AppCompatActivity)mContext;
+                        FragmentManager tFragManager = tActivity.getSupportFragmentManager();
+
+                        tPopup.show(tFragManager,TAG);
+                    }catch (Exception e){
+                        Log.e(TAG,"impossible de recuperer le fragment manager");
+                    }
+                }else {
+                    mIsGoodPlayer = true;
+                    FDMPopupNoFindIt tPopup = new FDMPopupNoFindIt();
+                    //recuperation du fragment manager pour voir la popup
+                    try{
+                        AppCompatActivity tActivity = (AppCompatActivity)mContext;
+                        FragmentManager tFragManager = tActivity.getSupportFragmentManager();
+
+                        tPopup.show(tFragManager,TAG);
+                    }catch (Exception e){
+                        Log.e(TAG,"impossible de recuperer le fragment manager");
+                    }
+                }
                 break;
+
+
             case R.id.fragment_play_activate_scan_btn:
                 mSharedPrefManager.putBoolean(FDMSharedPrefKey.SCAN_IS_ACTIVE,true);
                 mScanActiveImageView.setVisibility(View.VISIBLE);
