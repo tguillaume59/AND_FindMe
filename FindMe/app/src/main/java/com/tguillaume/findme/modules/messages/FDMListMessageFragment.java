@@ -53,6 +53,7 @@ public class FDMListMessageFragment extends FDMMainFragment implements View.OnCl
 
         //contact
         mContactList = new ArrayList<>();
+        mContactList.add(new FDMContactEntity("Dorian","02/05/2017",""));
         mContactList.add(new FDMContactEntity("Sebastien","29/05/2017","Je viens d'arriver à Bordeaux et toi ?"));
         mContactList.add(new FDMContactEntity("Laure","21/05/2017","Hey ! comment tu vas ? ;)"));
         mContactList.add(new FDMContactEntity("Mathilde","15/05/2017","Ca serait cool de se revoir un de ces quatre"));
@@ -78,6 +79,10 @@ public class FDMListMessageFragment extends FDMMainFragment implements View.OnCl
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Bundle tBundle = new Bundle();
+        tBundle.putString(FDMSharedPrefKey.NAME_CLICK, mAdapter.getName(i));
+
+        mFragmentListener.showFragment(FDMEnum.EnumNameFragment.MESSAGE, tBundle);
 
     }
 }

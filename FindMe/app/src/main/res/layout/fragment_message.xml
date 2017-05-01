@@ -6,11 +6,11 @@
     <RelativeLayout
         android:id="@+id/fragment_messages_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true">
 
         <TextView
-            android:id="@+id/fragment_list_toolbar_title_textview"
+            android:id="@+id/fragment_toolbar_title_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -28,11 +28,13 @@
     </RelativeLayout>
 
     <ListView
-        android:id="@+id/fragmet_messages_listview"
+        android:id="@+id/fragment_messages_listview"
         android:layout_above="@+id/fragment_message_saisi_layout"
         android:layout_below="@+id/fragment_messages_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
 
     <RelativeLayout
         android:id="@+id/fragment_message_saisi_layout"
@@ -49,6 +51,7 @@
 
         <EditText
             android:id="@+id/fragment_messages_message_edittext"
+            android:layout_toLeftOf="@+id/fragment_message_send_message_btn"
             android:layout_below="@+id/fragment_message_saisi_separator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,6 +59,15 @@
             android:textColor="@color/fdm_black"
             android:padding="5dp"
             android:layout_margin="5dp"/>
+
+        <ImageButton
+            android:id="@+id/fragment_message_send_message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_chat"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_bulle"/>
 
     </RelativeLayout>
 

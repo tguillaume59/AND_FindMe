@@ -79,4 +79,8 @@ public class FDMListMessageAdapter extends ArrayAdapter<FDMContactEntity> {
 
         return rowView;
     }
+
+    public String getName(int sPosition){
+        return mListContacts.get(sPosition).getName();
+    }
 }

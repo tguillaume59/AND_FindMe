@@ -18,4 +18,5 @@ public class FDMSharedPrefKey {
     public static final String PSEUDO = "PSEUDO";
     public static final String AVATAR_ID = "AVATAR_ID";
     public static final String AVATAR_INDEX_CONSTANTE = "AVATAR_INDEX_CONSTANTE";
+    public static final String NAME_CLICK = "NAME_CLICK";
 }
