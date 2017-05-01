@@ -37,6 +37,7 @@ import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 import com.tguillaume.findme.FDMMainActivity;
 import com.tguillaume.findme.common.entity.FDMUser;
+import com.tguillaume.findme.common.manager.key.FDMEnum;
 import com.tguillaume.findme.common.manager.key.FDMSharedPrefKey;
 import com.tguillaume.findme.modules.home.popup.FDMPopupFindIt;
 import com.tguillaume.findme.modules.home.popup.FDMPopupNoFindIt;
@@ -144,6 +145,7 @@ public class FDMHomeFragment extends FDMMainFragment  implements View.OnClickLis
                 getNewClue();
                 break;
             case R.id.fragment_play_messages_btn:
+                mFragmentListener.showFragment(FDMEnum.EnumNameFragment.LIST_MESSAGE);
                 break;
 
             case R.id.fragment_play_find_btn:

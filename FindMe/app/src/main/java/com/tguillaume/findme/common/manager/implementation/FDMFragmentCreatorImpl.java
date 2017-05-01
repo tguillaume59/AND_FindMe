@@ -6,6 +6,8 @@ import com.tguillaume.findme.modules.account.FDMCreateAccountFragment;
 import com.tguillaume.findme.modules.account.FDMCreateAvatarFragment;
 import com.tguillaume.findme.modules.accueil.FDMAccueilFragment;
 import com.tguillaume.findme.modules.home.fragment.FDMHomeFragment;
+import com.tguillaume.findme.modules.messages.FDMListMessageFragment;
+import com.tguillaume.findme.modules.messages.FDMMessageFragment;
 
 /**
  * @Project : AND_FindMe
@@ -52,6 +54,11 @@ public class FDMFragmentCreatorImpl {
                 break;
 
             case MESSAGE:
+                rFragment = new FDMMessageFragment();
+                break;
+
+            case LIST_MESSAGE :
+                rFragment = new FDMListMessageFragment();
                 break;
         }
 

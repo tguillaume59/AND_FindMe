@@ -15,6 +15,7 @@ public class FDMEnum {
         CREATE_PROFIL,
         PLAY_VIEW,
         CREATE_AVATAR,
+        LIST_MESSAGE,
         MESSAGE
     }
 }

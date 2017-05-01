@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_list_messages_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/fragment_list_messages_toolbar_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:typeface="normal"
+            android:textColor="@color/fdm_blue"
+            android:textSize="20sp"
+            android:text="@string/fragment_list_messages_toolbar_title"/>
+
+        <ImageButton
+            android:id="@+id/fragment_list_messages_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_power_settings_new_black_36dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fdm_grey"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragmet_list_messages_listview"
+        android:layout_below="@+id/fragment_list_messages_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</RelativeLayout>

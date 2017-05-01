@@ -55,8 +55,9 @@ public class FDMPopupFindIt extends DialogFragment implements View.OnClickListen
         switch (view.getId()){
             case R.id.popup_find_chat_btn:
                 if(mFragmentListener != null){
-                    mFragmentListener.showFragment(FDMEnum.EnumNameFragment.MESSAGE);
+                    mFragmentListener.showFragment(FDMEnum.EnumNameFragment.LIST_MESSAGE);
                 }
+                this.dismiss();
                 break;
         }
     }
