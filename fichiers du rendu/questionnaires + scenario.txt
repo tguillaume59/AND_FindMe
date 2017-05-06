@@ -16,20 +16,23 @@ A propos de la personne (questions spécifiques et dirigées)
 Homme
 
 2) Combien de fois avez-vous pris le train le mois dernier ? Etait-ce un mois ordinaire ?
-oui, oui
+Lundi à vendredi, oui
 
 3) Quel type de train était-ce ? (TGV, TER, RER, Eurostar, OuiGo …)
 TER
 
 4) Dans quelles circonstances et pour quelles raisons l’avez-vous pris la dernière fois ?
-[Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
-Etude
+Etudes
+
+5)[Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
+Non traitée
 
 Les retards (questions spécifiques ouvertes)
 6) Avez-vous déjà subi des retard ? Si oui :
+	oui
 
 	a) Combien de fois le mois dernier ? Etait-ce un mois ordinaire 
-	oui, 1 fois par semaine , oui ordinaire
+	1 fois par semaine , oui ordinaire
 
 	b) De combien de temps était ce retard ?
 	10-15 minutes
@@ -68,7 +71,7 @@ Gares (questions générales ouvertes)
 oui assez, ils sont en train de refaire toute la gare Lille Flandre
 
 15) Que faites-vous pendant que vous attendez votre train ?
-j’attend devant le panneau d’affichage et je regarde mon téléphone
+j’attends devant le panneau d’affichage et je regarde mon téléphone
 
 16) Priorités (questions générales ouvertes)
  Classez ces qualités par ordre de priorité :
@@ -98,20 +101,24 @@ A propos de la personne (questions spécifiques et dirigées)
 Femme
 
 2) Combien de fois avez-vous pris le train le mois dernier ? Etait-ce un mois ordinaire ?
-oui, oui
+tous les jours sauf le dimanche, oui
 
 3) Quel type de train était-ce ? (TGV, TER, RER, Eurostar, OuiGo …)
 TER - TGV (Ouigo)
 
 4) Dans quelles circonstances et pour quelles raisons l’avez-vous pris la dernière fois ?
-[Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
 Pour aller au travail et pour se rendre à un déplacement sur Paris
+
+5) [Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
+Non traitée
+
 
 Les retards (questions spécifiques ouvertes)
 6) Avez-vous déjà subi des retard ? Si oui :
+	Oui des retards
 
 	a) Combien de fois le mois dernier ? Etait-ce un mois ordinaire 
-	oui, une à deux fois par semaine , oui ordinaire
+	une à deux fois par semaine , oui ordinaire
 
 	b) De combien de temps était ce retard ?
 	10-15 minutes parfois même 30 minutes
@@ -163,10 +170,10 @@ Pareil que pour les retards, je réponds à mes emails
 
 Fin (questions générales ouvertes)
 17) Avez-vous quelque chose à rajouter ?
-Le OuiGo est un bon service qui rend bien service pour un prix relativement correct, il faudrait juste que les horaires soit plus accessible pour que ceci soit parfait.
+Le OuiGo est un bon service qui rend bien service pour un prix relativement correct, il faudrait juste que les horaires soient plus accessibles pour que ceci soit parfait.
 
 18) Avez-vous des anecdotes à raconter sur le thème du train ?
-Je pourrai vous raconter l’histoire de mon mariage, mais pour faire simple j’ai rencontré
+Je pourrais vous raconter l’histoire de mon mariage, mais pour faire simple j’ai rencontré
 mon mari dans le train un jour où il y avait des retards. Comme quoi les retards ne datent
 pas d’aujourd’hui. Mais au moins de temps en temps ils apportent de bonnes choses. De plus 
 c’est souvent lorsqu’il y a des retards que les gens se parlent plus dans les trains.
