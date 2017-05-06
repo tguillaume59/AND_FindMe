@@ -1,0 +1,131 @@
+Brainstorming IHM
+
+Benjamin Lefebvre
+Damien Toulouse
+Dorian Ongenae
+Guillaume Tartara
+Romain Hembert
+Tony Mercier
+
+—————————————————— Brainstorming —————————————
+
+Virer les billets papiers
+Utiliser les nouvelles technos pour informer les voyageurs
+Centraliser l’information
+Indiquer le numéro des voies sur les apps
+Recevoir un appel de Simone (i.e. la voix SNCF)
+Avoir des PC sur les voies pour chercher l’information
+Avoir + d’agents SNCF
+Donner aux gens des moyens de divertissement
+Adapter les correspondances sur les retards (communication inter-gare)
+MAJ l’information sur les périphériques
+Avoir plusieurs panneaux d’affichage des horaires
+Avoir accès à l’information depuis les trains
+Accès facile au plan de la gare
+Plan géant interactif mis à jour en temps réel
+Des chats domestiqués pour détendre les voyageurs
+Des bouteilles d’eau en cas de retard de train
+Des liaisons avec des hôtels, plan d’hébergement
+Géolocalisation des agents SNCF
+Carte thermique de la gare (pour savoir où dormir la nuit)
+Avoir les informations d’affluence des trains
+Avoir le panneau des voitures (disposition des voitures sur le quai dans le cas d’un TGV) disponible sur l’app
+Un chat’ entre les personnes d’un même train
+Mini-jeux dans le chat (cf 22)
+Avoir la carte du wagon bar disponible sur l’app
+Voir une carte d’occupation du train lors de la réservation, voire même après
+Système d’échange de places
++ de billets
+Avoir les caractéristiques du train au préalable sur l’app
+Système d'évaluation des trains / trajets
+Rendre l’Eurostar moins cher !!!
+Listing des trains affectés lors d’une grève
+Faire que l’Eurostar roule sur la mer
+Mettre des poissons dans la Manche
+Inclure les correspondances externes à la SNCF (type bus ou métro) dans les propositions de trajets SNCF
+Informer les gens sur l’état des service de locomotion hors SNCF
+Pouvoir informer les agents SNCF
+Around-message
+Indiquer les lieux d’intérêt (WC, restauration, …)
+Avoir une liste des alternatives en cas de problèmes (train annulé ? un bus part peut-être à ce même instant…)
+Avoir une notification écrite et détaillée décrivant la procédure à mener en cas de changement
+Recevoir une alerte à l’arrivée d’un contrôleur (quand le train est déjà en mouvement, bien sûr !)
+Informer les sourds avec une notification détaillant ce que la voix vient de dire
+Déclencher le réveil du portable à l’approche de la destination
+/!\ Ceci va ennuyer le contrôleur : un bouton pour les appeler
+Paris sur la disposition des trains dans la gare : SNCFGo!
+Pouvoir faire des suggestions à la gare
+Pouvoir faire des demandes au chef de gare
+Pouvoir appeler l’armée en cas d’attaque terroriste
+Manger !
+Avoir une carte de ton train pour savoir où on en est
+Avoir une carte des trains pour savoir où ils sont
+Un système de notification des beaux paysages à bord
+Pouvoir changer la langue de l’app facilement
+Système de confiance en entre utilisateurs → système de notation des utilisateurs ?
+Espace connecté dans la gare
+Live vidéo piano dans la gare + système de notation
+App pour qu’on puisse faire les kékés ensemble (piano sur téléphone …)
+Flash QR code pour avoir du contenu (eBook, vidéo, ...)
+
+
+total : 58 idées
+
+—————————————————— Vote pour les idées —————————————
+
+Votes :
+	 Damien : 
+
+	Tony : 
+	-Idée 43 “Déclencher le réveil du portable à l’approche de la destination” :
+	Permet au voyageur de ne pas s’inquiéter sur l’endroit où se trouve le train. Il 
+	peut se détendre, voir même s’assoupir sans louper l’info que son train va bientôt 
+	arriver. Idée qui apporte plus de confort à l’utilisateur.
+
+	- Idée 14 “Plan géant interactif mis à jour en temps réel” :
+	Idée qui permet d’éviter de nombreuses confusions pour le voyageur, en particulier 
+	pour les personnes n’ayant pas l’habitude de voyager en train. Peut être 
+	complémentaire avec d’autres idées comme la n°20, 21, 38, ...
+
+	- Idée 36 “Pouvoir informer les agents SNCF” :
+	Ajoute une notion de sécurité supplémentaire pour les passagers du train. Permet 
+	d’alerter rapidement un agent lors d’un conflit, ou d’un autre problème éventuel. 
+	Permet aussi d’avoir rapidement des informations concernant des incompréhension du 
+	voyageur concernant son trajet, ou son train.
+
+	Dorian : 
+	- Idée 25 “carte d’occupation du train”
+	Plus commode, pratique pour gagner du temps, s’organiser
+
+	- Idée 43 “réveil à l’arrivée du train”
+
+	- Idée 40 “notification écrite détaillant la procédure à suivre pour un changement 
+	de train ou une correspondance “
+	
+	Benjamin :
+	- Idée 49 Manger !
+
+	Guillaume : 
+	- Idée 8 Donner aux gens des moyens de divertissement 
+	- Idée 22 Un chat’ entre les personnes d’un même train
+	- Idée 2 Utiliser les nouvelles technos pour informer les voyageurs
+
+—————————————————— Scénario de conception —————————————
+
+Nous avons réalisé 2 scénarios, en effet dans un premier temps la première idée était
+trop idyllique et proposé un sytème qui existe déjà en parti. Nous avons donc décidé de
+créer le prototype "FindMe?" pour divertir les utilisateurs de transport en commun.
+
+Test 1 :
+––––––––
+
+Alice est une étudiante qui part en vacances. En effet celle-ci se rend à Bordeaux. Alice est plutôt stressée avec les transports en commun, c’est pourquoi celle-ci arrive avec de l’avance à la gare Lille Europe. Elle a déjà son billet pour gagner du temps, elle attend donc devant le panneau d’affichage pour connaître sa voie. Le temps passe, l’heure du départ approche et pourtant celle-ci ne voit toujours pas son train apparaître à l’écran. Elle vérifie sur son billet papier que la gare de départ est bien Lille Europe. Ceci lui confirme bien la gare.
+
+Alice souhaite avoir des informations sur la voie de départ. Pour cela, elle sort son smartphone et consulte l’application SNCF pour trouver ladite information. Elle apprend que son train a un problème de motrice et aura un sérieux retard, avec un départ redirigé à Gare Lille Flandres. Elle se rend donc à cette dernière, et monte dans le train sans problème, à la voie 10.
+
+Une fois assise, elle consulte la même application pour vérifier qu’elle puisse avoir son train pour Bordeaux. Malheureusement, ce dernier est annulé ! Elle décide tout de même de partir sur Paris, et change son billet pour Bordeaux durant le trajet. Elle cherche et réserve aussi un hôtel parmi les partenaires proposés par l’application afin de passer la nuit sur Paris. Enfin, elle consulte l’itinéraire pour se rendre de la Gare du Nord à son hôtel via les transports en commun.
+
+Test 2 : 
+–––––––––
+
+Alice est une étudiante qui part en vacances. En effet celle-ci se rend à Bordeaux, mais malheureusement son train a 30 minutes de retard. Pour s’occuper, elle trouve un QR Code sur le panneau d’affichage de la gare avec un message en dessous “Téléchargez Find Me !”. Elle la télécharge, et à son lancement, elle doit prendre une photo d’elle sur l’instant, afin que l’application sache à quoi elle ressemble (visage, vêtements, …). Ensuite, le jeu commence : une autre personne connectée au jeu choisie aléatoirement doit être trouvée par Alice avec l’aide de quelques indices. Le jeu fonctionne en réalité augmentée grâce à son téléphone. Elle peut donc visualiser les autres personnes qui jouent à ce jeu en temps réel. Dès qu’elle pense avoir trouvé la bonne personne, elle pose son téléphone contre celui de l’autre joueur. Avec la technologie NFC, elle peut savoir si elle a trouvé la bonne personne ou non. Si c’est la bonne personne, elle gagne des points. Cela permet à Alice d’attendre son train en s’amusant.

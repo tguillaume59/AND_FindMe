@@ -1,0 +1,194 @@
+Questionnaire IHM
+Benjamin Lefebvre
+Damien Toulouse
+Dorian Ongenae
+Guillaume Tartara
+Romain Hembert
+Tony Mercier
+
+Voici les réponses aux 2 questionnaires réalisés en début de semestre, suivi du 
+scénario d’usage.
+
+—————————————————— Questionnaire 1 —————————————
+
+A propos de la personne (questions spécifiques et dirigées)
+1) Noter le sexe de la personne.
+Homme
+
+2) Combien de fois avez-vous pris le train le mois dernier ? Etait-ce un mois ordinaire ?
+oui, oui
+
+3) Quel type de train était-ce ? (TGV, TER, RER, Eurostar, OuiGo …)
+TER
+
+4) Dans quelles circonstances et pour quelles raisons l’avez-vous pris la dernière fois ?
+[Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
+Etude
+
+Les retards (questions spécifiques ouvertes)
+6) Avez-vous déjà subi des retard ? Si oui :
+
+	a) Combien de fois le mois dernier ? Etait-ce un mois ordinaire 
+	oui, 1 fois par semaine , oui ordinaire
+
+	b) De combien de temps était ce retard ?
+	10-15 minutes
+
+	c) Comment vous occupez-vous pendant ce temps ?
+	attendre + téléphone
+
+	d) Cela-t-il entraîné des complications ? (rater un entretien/une correspondance)
+	retard en cours
+
+Le voyage et les grands espaces (questions spécifiques ouvertes)
+7) En moyenne, combien de temps passez-vous à bord du train ?
+15 minutes par trajet
+
+8) Quelles occupations avez-vous durant votre trajet ?
+musique + réseaux sociaux
+
+9) Généralement, avec combien de personnes prenez-vous le train ?
+seul parfois un ami
+
+10) A quel moment de la journée préférez-vous prendre le train ? Pourquoi ?
+pas le choix au matin et au soir
+
+Communication des informations (questions générales ouvertes)
+11) Comment vous tenez-vous informé(e) des informations sur vos trains (horaires, retards, prix, …) ?
+via les applications puis après avec les informations présente à la gare
+
+12) Parmi ces informations, lesquelles préférez-vous avoir le plus rapidement ?
+le prix + le temps de trajet
+
+13) Comment estimez-vous la fiabilité de la communication des informations (accessibilité, délais d’obtention, qualités des informations reçues, …) ?
+mauvaise en cas de retard
+
+Gares (questions générales ouvertes)
+14) Que pensez-vous de la conception des gares ? Entre autres, l’accès aux trains est-il aisé ?
+oui assez, ils sont en train de refaire toute la gare Lille Flandre
+
+15) Que faites-vous pendant que vous attendez votre train ?
+j’attend devant le panneau d’affichage et je regarde mon téléphone
+
+16) Priorités (questions générales ouvertes)
+ Classez ces qualités par ordre de priorité :
+	1 - Train à l’heure
+	2 - Train peu cher
+	3 - Fréquence de passage élargie
+	4 - Train confortable
+	5 - Train pas trop bondé
+
+
+Fin (questions générales ouvertes)
+17) Avez-vous quelque chose à rajouter ?
+Le jour ou nous aurons l’information des retards en avance ça sera une révolution pour la
+SNCF
+
+18) Avez-vous des anecdotes à raconter sur le thème du train ?
+C’est dommage que les gens ne se parlent plus comme avant dans le train, tout le monde est
+sur son téléphone (moi le premier). Au moins  à l’époque de nos parents, tous le monde 
+pouvais se parler plus facilement, les gens étaient moins timides et plus sociables.
+
+Merci, et bonne journée !
+
+—————————————————— Questionnaire 2 —————————————
+
+A propos de la personne (questions spécifiques et dirigées)
+1) Noter le sexe de la personne.
+Femme
+
+2) Combien de fois avez-vous pris le train le mois dernier ? Etait-ce un mois ordinaire ?
+oui, oui
+
+3) Quel type de train était-ce ? (TGV, TER, RER, Eurostar, OuiGo …)
+TER - TGV (Ouigo)
+
+4) Dans quelles circonstances et pour quelles raisons l’avez-vous pris la dernière fois ?
+[Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
+Pour aller au travail et pour se rendre à un déplacement sur Paris
+
+Les retards (questions spécifiques ouvertes)
+6) Avez-vous déjà subi des retard ? Si oui :
+
+	a) Combien de fois le mois dernier ? Etait-ce un mois ordinaire 
+	oui, une à deux fois par semaine , oui ordinaire
+
+	b) De combien de temps était ce retard ?
+	10-15 minutes parfois même 30 minutes
+
+	c) Comment vous occupez-vous pendant ce temps ?
+	Sur mon téléphone ou répondre aux emails
+
+	d) Cela-t-il entraîné des complications ? (rater un entretien/une correspondance)
+	retard au travail, heureusement le OuiGo lui était à l’heure
+
+Le voyage et les grands espaces (questions spécifiques ouvertes)
+7) En moyenne, combien de temps passez-vous à bord du train ?
+20 - 30 minutes par trajet + 1h en tgv pour rejoindre Paris 
+
+8) Quelles occupations avez-vous durant votre trajet ?
+Travailler sur mon ordinateur portable, des fois parler avec la personne à coté de moi
+
+9) Généralement, avec combien de personnes prenez-vous le train ?
+pour aller au travail seul, et en séminaire avec des collègues
+
+10) A quel moment de la journée préférez-vous prendre le train ? Pourquoi ?
+Pour le travail ça dépend des horaires, sinon le OuiGo n’est pas très flexible
+
+Communication des informations (questions générales ouvertes)
+11) Comment vous tenez-vous informé(e) des informations sur vos trains (horaires, retards, prix, …) ?
+sur le site de la SNCF ou bien leur application
+
+12) Parmis ces informations, lesquelles préférez-vous avoir le plus rapidement ?
+Les différents horaires
+
+13) Comment estimez-vous la fiabilité de la communication des informations (accessibilité, délais d’obtention, qualités des informations reçues, …) ?
+Les informations d’horaires sont assez claires sur internet
+
+Gares (questions générales ouvertes)
+14) Que pensez-vous de la conception des gares ? Entre autres, l’accès aux trains est-il aisé ?
+une gare c’est une gare … Sinon oui l’accès se fait facilement pour Lille Flandres. En revanche Lille Europe est plus compliquée lorsque l’on ne connait pas. 
+
+15) Que faites-vous pendant que vous attendez votre train ?
+Pareil que pour les retards, je réponds à mes emails
+
+16) Priorités (questions générales ouvertes)
+ Classez ces qualités par ordre de priorité :
+	1 - Train à l’heure
+	2 - Fréquence de passage élargie
+	3 - Train pas trop bondé
+	4 - Train peu cher
+	5 - Train confortable
+
+
+Fin (questions générales ouvertes)
+17) Avez-vous quelque chose à rajouter ?
+Le OuiGo est un bon service qui rend bien service pour un prix relativement correct, il faudrait juste que les horaires soit plus accessible pour que ceci soit parfait.
+
+18) Avez-vous des anecdotes à raconter sur le thème du train ?
+Je pourrai vous raconter l’histoire de mon mariage, mais pour faire simple j’ai rencontré
+mon mari dans le train un jour où il y avait des retards. Comme quoi les retards ne datent
+pas d’aujourd’hui. Mais au moins de temps en temps ils apportent de bonnes choses. De plus 
+c’est souvent lorsqu’il y a des retards que les gens se parlent plus dans les trains.
+
+Merci, et bonne journée !
+
+—————————————————— Scénario d’usage —————————————
+
+Alice est une étudiante qui part en vacances. En effet celle-ci se rend à Bordeaux. Alice est plutôt stressée avec les transports en commun, c’est pourquoi celle-ci arrive avec de l’avance à la gare Lille Europe. Elle a déjà son billet pour gagner du temps, elle attend donc devant le panneau d’affichage pour connaître sa voie. Le temps passe, l’heure du départ approche et pourtant celle-ci ne voit toujours pas son train apparaître à l’écran. Elle vérifie sur son billet papier que la gare de départ est bien Lille Europe. Ceci lui confirme bien la gare. 
+
+10 minutes avant le départ Alice fait la queue au guichet pour avoir des informations sur la voie de départ, cependant il y a du monde qui attend pour un seul guichetier qui semble débordé par les évènements.
+
+5 minutes avant le départ, Alice n’a toujours pas pu parler au guichetier, lorsque la voix de la SNCF annonce un retard d’une demi heure. Alice calcule le temps pour sa correspondance à Paris. Pour l’instant l’avance qu’elle a lui permet d’avoir son TGV Paris-Bordeaux, tout juste en prenant en compte le changement de gare. 
+
+10 minutes avant le départ, la voix SNCF annonce le train numéro 0908 654 321, il s’agit du train d’Alice. Celle-ci écoute attentivement. La voix annonce que le TGV Lille Paris partira en gare de Lille Flandres voie 10 suite à un problème de motrice. 
+
+Alice se rend à la gare Lille Flandres avec toutes ses valises, elle arrive tout juste et monte dans le train via la première porte. Celui-ci démarre, Alice doit traverser tout le TGV avec ses valises car elle se trouve à l’avant du TGV.
+
+Arrivée en Gare de Paris Nord, Alice se rend à la gare Paris Montparnasse via le RER. 
+
+Enfin arrivée dans la bonne gare, avec tout juste 5 minutes pour embarquer. Alice se rend sur le tableau d’affichage en courant pour s’informer sur sa voie de train vers Bordeaux. Elle peut ainsi lire que son train est annulé suite à une grève SNCF non médiatisée. Elle se rend alors au guichetier lui aussi débordé, lui demande lorsque vient son tour quand est le prochain TGV pour bordeaux ? 
+Celui ci lui répond avec un grand sourire demain 10h30.
+
+Alice est donc paniquée car elle doit maintenant se trouver un endroit pour passer la nuit.
+
