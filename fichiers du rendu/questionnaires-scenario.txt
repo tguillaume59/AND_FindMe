@@ -1,4 +1,5 @@
-Questionnaire IHM
+## Questionnaire IHM
+
 Benjamin Lefebvre
 Damien Toulouse
 Dorian Ongenae
@@ -6,12 +7,13 @@ Guillaume Tartara
 Romain Hembert
 Tony Mercier
 
-Voici les réponses aux 2 questionnaires réalisés en début de semestre, suivi du 
+Voici les réponses aux 2 questionnaires réalisés en début de semestre, suivies du 
 scénario d’usage.
 
-—————————————————— Questionnaire 1 —————————————
+—————————————————— Questionnaire 1 ——————————————————
 
-A propos de la personne (questions spécifiques et dirigées)
+## A propos de la personne (questions spécifiques et dirigées)
+
 1) Noter le sexe de la personne.
 Homme
 
@@ -25,14 +27,14 @@ TER
 Etudes
 
 5)[Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
-Non traitée
+N/A
 
 Les retards (questions spécifiques ouvertes)
 6) Avez-vous déjà subi des retard ? Si oui :
 	oui
 
 	a) Combien de fois le mois dernier ? Etait-ce un mois ordinaire 
-	1 fois par semaine , oui ordinaire
+	1 fois par semaine, oui ordinaire
 
 	b) De combien de temps était ce retard ?
 	10-15 minutes
@@ -43,7 +45,8 @@ Les retards (questions spécifiques ouvertes)
 	d) Cela-t-il entraîné des complications ? (rater un entretien/une correspondance)
 	retard en cours
 
-Le voyage et les grands espaces (questions spécifiques ouvertes)
+## Le voyage et les grands espaces (questions spécifiques ouvertes)
+
 7) En moyenne, combien de temps passez-vous à bord du train ?
 15 minutes par trajet
 
@@ -51,27 +54,29 @@ Le voyage et les grands espaces (questions spécifiques ouvertes)
 musique + réseaux sociaux
 
 9) Généralement, avec combien de personnes prenez-vous le train ?
-seul parfois un ami
+seul, parfois avec un ami
 
 10) A quel moment de la journée préférez-vous prendre le train ? Pourquoi ?
-pas le choix au matin et au soir
+Je n'ai pas le choix : au matin et au soir
 
-Communication des informations (questions générales ouvertes)
+## Communication des informations (questions générales ouvertes)
+
 11) Comment vous tenez-vous informé(e) des informations sur vos trains (horaires, retards, prix, …) ?
-via les applications puis après avec les informations présente à la gare
+via les applications puis après avec les informations présentes dans la gare
 
 12) Parmi ces informations, lesquelles préférez-vous avoir le plus rapidement ?
 le prix + le temps de trajet
 
 13) Comment estimez-vous la fiabilité de la communication des informations (accessibilité, délais d’obtention, qualités des informations reçues, …) ?
-mauvaise en cas de retard
+Mauvaise en cas de retard : elles n'arrivent pas à temps et ne sont pas assez précises.
 
-Gares (questions générales ouvertes)
+## Gares (questions générales ouvertes)
+
 14) Que pensez-vous de la conception des gares ? Entre autres, l’accès aux trains est-il aisé ?
-oui assez, ils sont en train de refaire toute la gare Lille Flandre
+Oui l'accès est assez simple, d'autant plus qu'ils sont en train de refaire toute la gare Lille Flandre.
 
 15) Que faites-vous pendant que vous attendez votre train ?
-j’attends devant le panneau d’affichage et je regarde mon téléphone
+J’attends devant le panneau d’affichage et je regarde mon téléphone.
 
 16) Priorités (questions générales ouvertes)
  Classez ces qualités par ordre de priorité :
@@ -82,38 +87,40 @@ j’attends devant le panneau d’affichage et je regarde mon téléphone
 	5 - Train pas trop bondé
 
 
-Fin (questions générales ouvertes)
+## Fin (questions générales ouvertes)
+
 17) Avez-vous quelque chose à rajouter ?
-Le jour ou nous aurons l’information des retards en avance ça sera une révolution pour la
-SNCF
+Le jour où nous aurons l’information des retards en avance ça sera une révolution pour la
+SNCF !
 
 18) Avez-vous des anecdotes à raconter sur le thème du train ?
 C’est dommage que les gens ne se parlent plus comme avant dans le train, tout le monde est
-sur son téléphone (moi le premier). Au moins  à l’époque de nos parents, tous le monde 
-pouvais se parler plus facilement, les gens étaient moins timides et plus sociables.
+sur son téléphone (moi le premier). Au moins à l’époque de nos parents, tout le monde 
+pouvait se parler plus facilement, les gens étaient moins timides et plus sociables.
 
-Merci, et bonne journée !
+## Merci, et bonne journée !
 
-—————————————————— Questionnaire 2 —————————————
+—————————————————— Questionnaire 2 ——————————————————
 
-A propos de la personne (questions spécifiques et dirigées)
+## A propos de la personne (questions spécifiques et dirigées)
+
 1) Noter le sexe de la personne.
 Femme
 
 2) Combien de fois avez-vous pris le train le mois dernier ? Etait-ce un mois ordinaire ?
-tous les jours sauf le dimanche, oui
+Tous les jours sauf le dimanche. Oui, c'était un mois ordinaire.
 
 3) Quel type de train était-ce ? (TGV, TER, RER, Eurostar, OuiGo …)
-TER - TGV (Ouigo)
+TER - OuiGo
 
 4) Dans quelles circonstances et pour quelles raisons l’avez-vous pris la dernière fois ?
-Pour aller au travail et pour se rendre à un déplacement sur Paris
+Pour aller au travail et pour me rendre à un déplacement sur Paris.
 
 5) [Si elle déclare ne jamais prendre le train] Quel moyen de transport privilégiez-vous ? Pourquoi ?
-Non traitée
+N/A
 
+## Les retards (questions spécifiques ouvertes)
 
-Les retards (questions spécifiques ouvertes)
 6) Avez-vous déjà subi des retard ? Si oui :
 	Oui des retards
 
@@ -127,22 +134,24 @@ Les retards (questions spécifiques ouvertes)
 	Sur mon téléphone ou répondre aux emails
 
 	d) Cela-t-il entraîné des complications ? (rater un entretien/une correspondance)
-	retard au travail, heureusement le OuiGo lui était à l’heure
+	J'étais en retard au travail, heureusement le OuiGo lui était à l’heure !
 
-Le voyage et les grands espaces (questions spécifiques ouvertes)
+## Le voyage et les grands espaces (questions spécifiques ouvertes)
+
 7) En moyenne, combien de temps passez-vous à bord du train ?
-20 - 30 minutes par trajet + 1h en tgv pour rejoindre Paris 
+20-30 minutes par trajet + 1h en TGV pour rejoindre Paris 
 
 8) Quelles occupations avez-vous durant votre trajet ?
 Travailler sur mon ordinateur portable, des fois parler avec la personne à coté de moi
 
 9) Généralement, avec combien de personnes prenez-vous le train ?
-pour aller au travail seul, et en séminaire avec des collègues
+pour aller au travail : seul, et en séminaire : avec des collègues
 
 10) A quel moment de la journée préférez-vous prendre le train ? Pourquoi ?
-Pour le travail ça dépend des horaires, sinon le OuiGo n’est pas très flexible
+Pour le travail ça dépend des horaires, sinon le OuiGo n’est pas très flexible (les horaires et les gares où on peut le prendre).
 
-Communication des informations (questions générales ouvertes)
+## Communication des informations (questions générales ouvertes)
+
 11) Comment vous tenez-vous informé(e) des informations sur vos trains (horaires, retards, prix, …) ?
 sur le site de la SNCF ou bien leur application
 
@@ -150,14 +159,15 @@ sur le site de la SNCF ou bien leur application
 Les différents horaires
 
 13) Comment estimez-vous la fiabilité de la communication des informations (accessibilité, délais d’obtention, qualités des informations reçues, …) ?
-Les informations d’horaires sont assez claires sur internet
+Les informations d’horaires sont assez claires sur internet.
 
-Gares (questions générales ouvertes)
+## Gares (questions générales ouvertes)
+
 14) Que pensez-vous de la conception des gares ? Entre autres, l’accès aux trains est-il aisé ?
-une gare c’est une gare … Sinon oui l’accès se fait facilement pour Lille Flandres. En revanche Lille Europe est plus compliquée lorsque l’on ne connait pas. 
+Une gare c’est une gare … Sinon, oui, l’accès se fait facilement pour Lille Flandres. En revanche à Lille Europe c'est plus compliqué lorsque l’on ne connait pas. 
 
 15) Que faites-vous pendant que vous attendez votre train ?
-Pareil que pour les retards, je réponds à mes emails
+Pareil que pour les retards, je réponds à mes emails.
 
 16) Priorités (questions générales ouvertes)
  Classez ces qualités par ordre de priorité :
@@ -168,7 +178,8 @@ Pareil que pour les retards, je réponds à mes emails
 	5 - Train confortable
 
 
-Fin (questions générales ouvertes)
+## Fin (questions générales ouvertes)
+
 17) Avez-vous quelque chose à rajouter ?
 Le OuiGo est un bon service qui rend bien service pour un prix relativement correct, il faudrait juste que les horaires soient plus accessibles pour que ceci soit parfait.
 
